@@ -34,12 +34,12 @@
 .\build.ps1 -GameDir '你的游戏目录'
 ```
 
-成品位于 `artifacts\BeetleBattlePredictor-v1.0.6.zip`。
+成品位于 `artifacts\BeetleBattlePredictor-v1.0.7.zip`。
 
 项目优先引用游戏首次启动后生成的 `BepInEx\interop`；若尚未安装 BepInEx，则开发环境可使用元数据分析产生的兼容引用程序集。
 
 ## 配置与排错
 
-配置文件首次运行后生成在 `BepInEx\config\cn.codex.davethediver.beetlebattlepredictor.cfg`，可调整开关、位置和字号。
+配置文件首次运行后生成在 `BepInEx\config\cn.codex.davethediver.beetlebattlepredictor.cfg`，可调整开关、位置和字号。默认纵向位置为 `Y=340`，会避开左上方的甲虫头像与血条。
 
-若没有提示，请检查 `BepInEx\LogOutput.log` 中是否出现 `Beetle Battle Predictor 1.0.6 loaded`。游戏更新后如果类名或方法签名变化，请附上该日志与游戏 Build ID 报告问题。当前代码按 Steam Build ID `24077479` 分析。
+若没有提示，请检查 `BepInEx\LogOutput.log` 中是否出现 `Beetle Battle Predictor 1.0.7 loaded`。游戏更新后如果类名或方法签名变化，请附上该日志与游戏 Build ID 报告问题。当前代码按 Steam Build ID `24077479` 分析。

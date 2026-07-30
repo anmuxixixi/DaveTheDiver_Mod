@@ -3,7 +3,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>BeetleBattlePredictor</AssemblyName>
     <RootNamespace>BeetleBattlePredictor</RootNamespace>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
     <LangVersion>latest</LangVersion>
     <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>

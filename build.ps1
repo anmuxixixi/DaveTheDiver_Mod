@@ -21,6 +21,6 @@ if ($LASTEXITCODE -ne 0) { throw "Build failed with exit code $LASTEXITCODE." }
 New-Item -ItemType Directory -Path $artifactDir -Force | Out-Null
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'src\BeetleBattlePredictor\bin\Release\net6.0\BeetleBattlePredictor.dll') -Destination $artifactDir -Force
 
-$zip = Join-Path $PSScriptRoot 'artifacts\BeetleBattlePredictor-v1.0.6.zip'
+$zip = Join-Path $PSScriptRoot 'artifacts\BeetleBattlePredictor-v1.0.7.zip'
 Compress-Archive -Path (Join-Path $PSScriptRoot 'artifacts\BeetleBattlePredictor\*') -DestinationPath $zip -Force
 Write-Host "Built: $zip"
