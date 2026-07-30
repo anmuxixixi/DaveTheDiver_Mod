@@ -1,6 +1,6 @@
 .tools/
 artifacts/*
-!artifacts/BeetleBattlePredictor-v1.0.6.zip
+!artifacts/BeetleBattlePredictor-v1.0.7.zip
 bin/
 obj/
 local.properties
