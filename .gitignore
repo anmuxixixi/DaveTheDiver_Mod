@@ -1,0 +1,6 @@
+.tools/
+artifacts/*
+!artifacts/BeetleBattlePredictor-v1.0.6.zip
+bin/
+obj/
+local.properties

@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <InteropDir Condition="'$(InteropDir)' == ''">$(GameDir)\BepInEx\interop</InteropDir>
+    <AnalysisInteropDir Condition="'$(AnalysisInteropDir)' == ''">$(MSBuildThisFileDirectory).tools\dump\DummyDll</AnalysisInteropDir>
+    <EffectiveInteropDir Condition="Exists('$(InteropDir)\Assembly-CSharp.dll')">$(InteropDir)</EffectiveInteropDir>
+    <EffectiveInteropDir Condition="'$(EffectiveInteropDir)' == ''">$(AnalysisInteropDir)</EffectiveInteropDir>
+  </PropertyGroup>
+</Project>
