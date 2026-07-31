@@ -42,6 +42,10 @@ Codex 会在需要访问 GitHub、BepInEx 官方下载站或写入游戏目录�
 
 ## 安装
 
+没有安装 Codex、需要逐步操作说明的玩家，请阅读：
+
+**[普通玩家详细安装指南（BepInEx 安装、Mod 安装、更新、卸载与排错）](docs/INSTALL.zh-CN.md)**
+
 1. 安装 Windows x64 的 BepInEx 6 IL2CPP。本项目使用并验证了 `BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.785+6abdba4.zip`。
 2. 将 BepInEx 压缩包内容解压到游戏根目录（与 `DaveTheDiver.exe` 同级）。
 3. 启动一次游戏再退出，让 BepInEx 生成 `BepInEx\interop`。
