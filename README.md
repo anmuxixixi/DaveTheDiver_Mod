@@ -4,6 +4,28 @@
 
 本 Mod 会改变敌方 AI 的出招生成时机，但不修改血量、伤害、战斗结算或存档。
 
+## 使用 Codex 自动安装
+
+已安装 Codex 的 Windows 玩家，可以把下面这段话直接粘贴给 Codex：
+
+```text
+请从 https://github.com/anmuxixixi/DaveTheDiver_Mod 安装最新版甲虫大作战预测 Mod。下载并检查仓库中的 install-from-github.ps1，然后运行它；让脚本自动定位 Steam 游戏目录、安装缺失的 BepInEx 6 IL2CPP 和最新版 Mod。执行外部下载及写入游戏目录前向我申请权限，完成后报告安装版本和 DLL SHA256。
+```
+
+Codex 会在需要访问 GitHub、BepInEx 官方下载站或写入游戏目录时显示权限确认。安装器不会在游戏运行时覆盖文件，并且只从本仓库的 `main` 分支选择版本号最高的发布包。
+
+也可以在克隆本仓库后直接运行：
+
+```powershell
+.\install-from-github.ps1
+```
+
+如果自动定位失败，可明确指定游戏目录：
+
+```powershell
+.\install-from-github.ps1 -GameDir 'E:\SteamLibrary\steamapps\common\Dave the Diver'
+```
+
 ## 效果预览
 
 ![甲虫大作战预测 Mod 效果：显示对手招式与推荐应对动作](docs/images/beetle-battle-predictor-preview.png)
