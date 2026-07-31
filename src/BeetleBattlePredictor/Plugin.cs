@@ -10,7 +10,7 @@ public sealed class Plugin : BasePlugin
 {
     public const string PluginGuid = "cn.codex.davethediver.beetlebattlepredictor";
     public const string PluginName = "Beetle Battle Predictor";
-    public const string PluginVersion = "1.0.7";
+    public const string PluginVersion = "1.0.8";
 
     internal static ManualLogSource ModLog { get; private set; } = null!;
     internal static ConfigEntry<bool> IsEnabled { get; private set; } = null!;

@@ -67,12 +67,17 @@ internal sealed class PredictorOverlay : MonoBehaviour
         }
 
         var text = Prediction.Describe(PredictionState.OpponentMove);
+        var roundText = PredictionState.RoundNumber > 0
+            ? $"第 {PredictionState.RoundNumber} 回合"
+            : PredictionState.TurnsRemaining >= 0
+                ? $"剩余 {PredictionState.TurnsRemaining} 回合"
+                : "当前回合";
         var width = Math.Min(430f, Screen.width - Plugin.PositionX.Value - 20f);
         var rect = new Rect(Plugin.PositionX.Value, Plugin.PositionY.Value, width, 150f);
 
         DrawPanel(rect);
         GUI.Label(new Rect(rect.x + 20f, rect.y + 6f, rect.width - 38f, 28f),
-            $"甲壳虫出招预测   第 {PredictionState.Turn + 1} 回合", _headerStyle);
+            $"甲壳虫出招预测   {roundText}", _headerStyle);
         GUI.Label(new Rect(rect.x + 20f, rect.y + 34f, rect.width - 38f, 40f),
             $"对手   {text.Opponent}", _opponentStyle);
         GUI.Label(new Rect(rect.x + 20f, rect.y + 72f, rect.width - 38f, 42f),
