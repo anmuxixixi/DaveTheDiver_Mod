@@ -19,23 +19,38 @@ internal static class Prediction
         BeetleMove.RockRush => new("石头 · 冲锋", "布 · 防御/回血", "出布"),
         _ => new("尚未生成", "等待对手选择", "等待"),
     };
+
+    internal static int CalculateRoundNumber(int maxTurnCount, int turnsRemaining)
+    {
+        if (maxTurnCount < 0 || turnsRemaining < 0 || turnsRemaining > maxTurnCount)
+        {
+            return -1;
+        }
+
+        // The game stores a countdown: on round 1 both values are 9, then
+        // turnsRemaining decreases until round 10 where it reaches 0.
+        return maxTurnCount - turnsRemaining + 1;
+    }
 }
 
 internal static class PredictionState
 {
     internal static BeetleMove OpponentMove { get; private set; } = BeetleMove.None;
-    internal static int Turn { get; private set; } = -1;
+    internal static int TurnsRemaining { get; private set; } = -1;
+    internal static int RoundNumber { get; private set; } = -1;
     internal static bool HasPrediction => OpponentMove != BeetleMove.None;
 
-    internal static void Set(BeetleMove move, int turn)
+    internal static void Set(BeetleMove move, int turnsRemaining, int roundNumber)
     {
         OpponentMove = move;
-        Turn = turn;
+        TurnsRemaining = turnsRemaining;
+        RoundNumber = roundNumber;
     }
 
     internal static void Clear()
     {
         OpponentMove = BeetleMove.None;
-        Turn = -1;
+        TurnsRemaining = -1;
+        RoundNumber = -1;
     }
 }

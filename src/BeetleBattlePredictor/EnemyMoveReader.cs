@@ -61,14 +61,19 @@ internal static class EnemyMoveReader
                 return;
             }
 
-            var turn = manager.NowTurn?.Value ?? -1;
-            if (PredictionState.OpponentMove == move && PredictionState.Turn == turn)
+            var turnsRemaining = manager.NowTurn?.Value ?? -1;
+            var turnPanel = UnityEngine.Object.FindObjectOfType<InsectBattleTurnPanelUIElement>();
+            var roundNumber = Prediction.CalculateRoundNumber(turnPanel?._maxTurnCount ?? -1, turnsRemaining);
+            if (PredictionState.OpponentMove == move &&
+                PredictionState.TurnsRemaining == turnsRemaining &&
+                PredictionState.RoundNumber == roundNumber)
             {
                 return;
             }
 
-            PredictionState.Set(move, turn);
-            Plugin.ModLog.LogInfo($"Locked enemy move: {move}, turn {turn}");
+            PredictionState.Set(move, turnsRemaining, roundNumber);
+            Plugin.ModLog.LogInfo(
+                $"Locked enemy move: {move}, round {roundNumber}, turns remaining {turnsRemaining}");
         }
         catch (Exception ex)
         {

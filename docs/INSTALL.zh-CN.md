@@ -70,7 +70,7 @@ BepInEx\interop\
 
 当前版本可直接下载：
 
-[下载 BeetleBattlePredictor v1.0.7](https://raw.githubusercontent.com/anmuxixixi/DaveTheDiver_Mod/main/artifacts/BeetleBattlePredictor-v1.0.7.zip)
+[下载 BeetleBattlePredictor v1.0.8](https://raw.githubusercontent.com/anmuxixixi/DaveTheDiver_Mod/main/artifacts/BeetleBattlePredictor-v1.0.8.zip)
 
 如果浏览器只显示下载页面，请使用页面右上角的下载按钮保存 ZIP 文件。
 
@@ -119,7 +119,7 @@ BepInEx\interop\
 启动后可以在 `BepInEx\LogOutput.log` 中搜索以下内容确认版本：
 
 ```text
-Beetle Battle Predictor 1.0.7 loaded
+Beetle Battle Predictor 1.0.8 loaded
 ```
 
 ## 卸载 Mod
@@ -145,7 +145,7 @@ Beetle Battle Predictor 1.0.7 loaded
 依次检查：
 
 1. DLL 是否位于正确的 `BepInEx\plugins\BeetleBattlePredictor` 路径。
-2. `BepInEx\LogOutput.log` 中是否包含 `Beetle Battle Predictor 1.0.7 loaded`。
+2. `BepInEx\LogOutput.log` 中是否包含 `Beetle Battle Predictor 1.0.8 loaded`。
 3. 是否误装了 BepInEx 5、Mono 版或 32 位版；本游戏需要 BepInEx 6 IL2CPP Windows x64。
 4. 笔记本键盘是否需要同时按 `Fn+F8`。
 
@@ -159,7 +159,7 @@ Beetle Battle Predictor 1.0.7 loaded
 
 ### 面板遮挡游戏 UI
 
-v1.0.7 的默认位置已经下移。若曾手动修改过配置，可打开：
+v1.0.7 及更高版本的默认位置已经下移。若曾手动修改过配置，可打开：
 
 ```text
 BepInEx\config\cn.codex.davethediver.beetlebattlepredictor.cfg
