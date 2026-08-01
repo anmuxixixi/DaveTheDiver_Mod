@@ -1,5 +1,7 @@
 # 甲虫大作战预测 Mod 详细安装指南
 
+[返回仓库首页](../README.md) · [查看功能介绍与使用教程](BEETLE_BATTLE_PREDICTOR.zh-CN.md)
+
 本指南适用于没有安装 Codex、希望手动安装 Mod 的普通 Windows Steam 玩家。
 
 ## 安装前准备
