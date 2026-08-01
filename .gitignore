@@ -1,6 +1,7 @@
 .tools/
 artifacts/*
 !artifacts/BeetleBattlePredictor-v1.0.8.zip
+!artifacts/UncollectedBeetleSpawner-v1.0.10.zip
 bin/
 obj/
 local.properties
