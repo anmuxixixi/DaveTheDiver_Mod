@@ -4,7 +4,7 @@
 
 本教程只适用于“未收集昆虫刷新 Mod”，其安装包名称为 `UncollectedBeetleSpawner-vX.Y.Z.zip`。不要误装甲虫大作战预测器的 `BeetleBattlePredictor` 安装包。
 
-## 安装前准备
+## 【没有Codex的玩家】安装前准备
 
 - Windows 10 或 Windows 11 64 位
 - Steam 版《潜水员戴夫》及丛林 DLC
@@ -71,7 +71,7 @@ Uncollected Beetle Spawner 1.0.10 loaded.
 
 如果同时安装了甲虫大作战预测 Mod，日志中还会出现它自己的加载记录。这是正常现象，两个 Mod 使用不同目录，不会互相覆盖。
 
-## 使用 Codex 安装
+## 【安装了Codex的玩家】使用 Codex 安装
 
 可以把下面这段话单独发送给 Codex：
 
